@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]>
+	<html class="no-js lt-ie8 lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+	<html class="no-js lt-ie9 ie8" lang="en">
+<![endif]-->
+<!--[if IE 9 ]>
+	<html class="no-js ie9" lang="en">
+<![endif]-->
+<!--[if !(IE)]><!-->
+	<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Style Manual</title>
+
+	<script type="text/javascript">
+		var $html = document.documentElement; if ($html.classList) $html.classList.remove("no-js"), $html.classList.add("js"); else { var className = "no-js"; $html.className = $html.className.replace(new RegExp("(^|\\b)" + className.split(" ").join("|") + "(\\b|$)", "gi"), " "), $html.className += " js" }
+	</script>
+
+	<link rel="icon" href="../assets/favicons/favicon.ico">
+	<link type="text/css" rel="stylesheet" href="../css/main.css">
+	<link type="text/css" rel="stylesheet" href="../css/stylemanualstyles.css">
+	
+
+	<!-- These are shivs to help modern html work in older internet explorer browsers -->
+	<!--[if lt IE 9]>
+		<script>
+			/* https://github.com/aFarkas/html5shiv HTML5 Shiv 3.7.3 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed */
+			!function(a,b){function c(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function d(){var a=t.elements;return"string"==typeof a?a.split(" "):a}function e(a,b){var c=t.elements;"string"!=typeof c&&(c=c.join(" ")),"string"!=typeof a&&(a=a.join(" ")),t.elements=c+" "+a,j(b)}function f(a){var b=s[a[q]];return b||(b={},r++,a[q]=r,s[r]=b),b}function g(a,c,d){if(c||(c=b),l)return c.createElement(a);d||(d=f(c));var e;return e=d.cache[a]?d.cache[a].cloneNode():p.test(a)?(d.cache[a]=d.createElem(a)).cloneNode():d.createElem(a),!e.canHaveChildren||o.test(a)||e.tagUrn?e:d.frag.appendChild(e)}function h(a,c){if(a||(a=b),l)return a.createDocumentFragment();c=c||f(a);for(var e=c.frag.cloneNode(),g=0,h=d(),i=h.length;i>g;g++)e.createElement(h[g]);return e}function i(a,b){b.cache||(b.cache={},b.createElem=a.createElement,b.createFrag=a.createDocumentFragment,b.frag=b.createFrag()),a.createElement=function(c){return t.shivMethods?g(c,a,b):b.createElem(c)},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+d().join().replace(/[\w\-:]+/g,function(a){return b.createElem(a),b.frag.createElement(a),'c("'+a+'")'})+");return n}")(t,b.frag)}function j(a){a||(a=b);var d=f(a);return!t.shivCSS||k||d.hasCSS||(d.hasCSS=!!c(a,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),l||i(a,d),a}var k,l,m="3.7.3",n=a.html5||{},o=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,p=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,q="_html5shiv",r=0,s={};!function(){try{var a=b.createElement("a");a.innerHTML="<xyz></xyz>",k="hidden"in a,l=1==a.childNodes.length||function(){b.createElement("a");var a=b.createDocumentFragment();return"undefined"==typeof a.cloneNode||"undefined"==typeof a.createDocumentFragment||"undefined"==typeof a.createElement}()}catch(c){k=!0,l=!0}}();var t={elements:n.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:m,shivCSS:n.shivCSS!==!1,supportsUnknownElements:l,shivMethods:n.shivMethods!==!1,type:"default",shivDocument:j,createElement:g,createDocumentFragment:h,addElements:e};a.html5=t,j(b),"object"==typeof module&&module.exports&&(module.exports=t)}("undefined"!=typeof window?window:this,document);
+		</script>
+		<script>
+			/* https://github.com/scottjehl/Respond Respond.js v1.4.2: min/max-width media query polyfill * Copyright 2013 Scott Jehl Licensed under https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT */
+			!function(a){"use strict";a.matchMedia=a.matchMedia||function(a){var b,c=a.documentElement,d=c.firstElementChild||c.firstChild,e=a.createElement("body"),f=a.createElement("div");return f.id="mq-test-1",f.style.cssText="position:absolute;top:-100em",e.style.background="none",e.appendChild(f),function(a){return f.innerHTML='&shy;<style media="'+a+'"> #mq-test-1 { width: 42px; }</style>',c.insertBefore(e,d),b=42===f.offsetWidth,c.removeChild(e),{matches:b,media:a}}}(a.document)}(this),function(a){"use strict";function b(){u(!0)}var c={};a.respond=c,c.update=function(){};var d=[],e=function(){var b=!1;try{b=new a.XMLHttpRequest}catch(c){b=new a.ActiveXObject("Microsoft.XMLHTTP")}return function(){return b}}(),f=function(a,b){var c=e();c&&(c.open("GET",a,!0),c.onreadystatechange=function(){4!==c.readyState||200!==c.status&&304!==c.status||b(c.responseText)},4!==c.readyState&&c.send(null))};if(c.ajax=f,c.queue=d,c.regex={media:/@media[^\{]+\{([^\{\}]*\{[^\}\{]*\})+/gi,keyframes:/@(?:\-(?:o|moz|webkit)\-)?keyframes[^\{]+\{(?:[^\{\}]*\{[^\}\{]*\})+[^\}]*\}/gi,urls:/(url\()['"]?([^\/\)'"][^:\)'"]+)['"]?(\))/g,findStyles:/@media *([^\{]+)\{([\S\s]+?)$/,only:/(only\s+)?([a-zA-Z]+)\s?/,minw:/\([\s]*min\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/,maxw:/\([\s]*max\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/},c.mediaQueriesSupported=a.matchMedia&&null!==a.matchMedia("only all")&&a.matchMedia("only all").matches,!c.mediaQueriesSupported){var g,h,i,j=a.document,k=j.documentElement,l=[],m=[],n=[],o={},p=30,q=j.getElementsByTagName("head")[0]||k,r=j.getElementsByTagName("base")[0],s=q.getElementsByTagName("link"),t=function(){var a,b=j.createElement("div"),c=j.body,d=k.style.fontSize,e=c&&c.style.fontSize,f=!1;return b.style.cssText="position:absolute;font-size:1em;width:1em",c||(c=f=j.createElement("body"),c.style.background="none"),k.style.fontSize="100%",c.style.fontSize="100%",c.appendChild(b),f&&k.insertBefore(c,k.firstChild),a=b.offsetWidth,f?k.removeChild(c):c.removeChild(b),k.style.fontSize=d,e&&(c.style.fontSize=e),a=i=parseFloat(a)},u=function(b){var c="clientWidth",d=k[c],e="CSS1Compat"===j.compatMode&&d||j.body[c]||d,f={},o=s[s.length-1],r=(new Date).getTime();if(b&&g&&p>r-g)return a.clearTimeout(h),h=a.setTimeout(u,p),void 0;g=r;for(var v in l)if(l.hasOwnProperty(v)){var w=l[v],x=w.minw,y=w.maxw,z=null===x,A=null===y,B="em";x&&(x=parseFloat(x)*(x.indexOf(B)>-1?i||t():1)),y&&(y=parseFloat(y)*(y.indexOf(B)>-1?i||t():1)),w.hasquery&&(z&&A||!(z||e>=x)||!(A||y>=e))||(f[w.media]||(f[w.media]=[]),f[w.media].push(m[w.rules]))}for(var C in n)n.hasOwnProperty(C)&&n[C]&&n[C].parentNode===q&&q.removeChild(n[C]);n.length=0;for(var D in f)if(f.hasOwnProperty(D)){var E=j.createElement("style"),F=f[D].join("\n");E.type="text/css",E.media=D,q.insertBefore(E,o.nextSibling),E.styleSheet?E.styleSheet.cssText=F:E.appendChild(j.createTextNode(F)),n.push(E)}},v=function(a,b,d){var e=a.replace(c.regex.keyframes,"").match(c.regex.media),f=e&&e.length||0;b=b.substring(0,b.lastIndexOf("/"));var g=function(a){return a.replace(c.regex.urls,"$1"+b+"$2$3")},h=!f&&d;b.length&&(b+="/"),h&&(f=1);for(var i=0;f>i;i++){var j,k,n,o;h?(j=d,m.push(g(a))):(j=e[i].match(c.regex.findStyles)&&RegExp.$1,m.push(RegExp.$2&&g(RegExp.$2))),n=j.split(","),o=n.length;for(var p=0;o>p;p++)k=n[p],l.push({media:k.split("(")[0].match(c.regex.only)&&RegExp.$2||"all",rules:m.length-1,hasquery:k.indexOf("(")>-1,minw:k.match(c.regex.minw)&&parseFloat(RegExp.$1)+(RegExp.$2||""),maxw:k.match(c.regex.maxw)&&parseFloat(RegExp.$1)+(RegExp.$2||"")})}u()},w=function(){if(d.length){var b=d.shift();f(b.href,function(c){v(c,b.href,b.media),o[b.href]=!0,a.setTimeout(function(){w()},0)})}},x=function(){for(var b=0;b<s.length;b++){var c=s[b],e=c.href,f=c.media,g=c.rel&&"stylesheet"===c.rel.toLowerCase();e&&g&&!o[e]&&(c.styleSheet&&c.styleSheet.rawCssText?(v(c.styleSheet.rawCssText,e,f),o[e]=!0):(!/^([a-zA-Z:]*\/\/)/.test(e)&&!r||e.replace(RegExp.$1,"").split("/")[0]===a.location.host)&&("//"===e.substring(0,2)&&(e=a.location.protocol+e),d.push({href:e,media:f})))}w()};x(),c.update=x,c.getEmValue=t,a.addEventListener?a.addEventListener("resize",b,!1):a.attachEvent&&a.attachEvent("onresize",b)}}(this);
+		</script>
+	<![endif]-->
+
+</head>
+
+<!-- BODY -->
+<!-- GRID-12 -->
+<body class="au-grid">
+
+	<!-- SKIP-LINKS -->
+	<nav class="au-skip-link">
+		<a class="au-skip-link__link" href="#content">Skip to main content</a>
+		<a class="au-skip-link__link" href="#mainmenu">Skip to main navigation</a>
+	</nav>
+
+	<!-- HEADER -->
+	<header class="au-header au-header--dark" role="banner">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+
+					<!-- Search -->
+				<div style="position: absolute;
+				right: 0;">						
+					<input type="email" class="au-text-input" id="email" name="email">
+				</div>
+				<div>
+					<button class="au-btn au-btn--dark" style="position: absolute; right: 0; border-radius: 0px 4px 4px 0px; border: 2px solid gray; padding-bottom: 10px;
+					">Search</button>
+				</div>
+
+					<a class="au-header__brand" href="../index_links.html">
+						<img class="au-header__brand-image" alt="Insert alternate text here" src="../assets/img/header-logo-agov.png">
+						<div class="au-header__text">
+						<h1 class="au-header__heading">Style Manual</h1>
+						<!-- <div class="au-header__subline">Simple explaination of the website</div> -->
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- MAIN NAVIGATION -->
+	<nav class="au-main-nav au-main-nav--dark" id="mainmenu" aria-label="main">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="au-main-nav__content" id="main-nav-default-dark">
+						<button
+							aria-controls="main-nav-default-dark"
+							class="au-main-nav__toggle au-main-nav__toggle--open"
+							onClick="return AU.mainNav.Toggle( this )">
+							Menu
+						</button>
+						<div class="au-main-nav__menu">
+							<div class="au-main-nav__menu-inner">
+								<div class="au-main-nav__focus-trap-top"></div>
+								<button
+									aria-controls="main-nav-default-dark"
+									class="au-main-nav__toggle au-main-nav__toggle--close"
+									onClick="return AU.mainNav.Toggle( this )">
+									Close
+								</button>
+								<ul class="au-link-list">
+										<li class="active"><a href="#">Writing standards</a></li>
+										<li><a href="#">Visual design standards</a></li>
+										<li><a href="#">Publishing requirements</a></li>
+										<li><a href="#">Process guidance</a></li>		
+										<li><a href="#">Style guidance</a></li>
+									<li><a href="#">About</a></li>
+								</ul>
+								<div class="au-main-nav__focus-trap-bottom"></div>
+							</div>
+						</div>
+						<div class="au-main-nav__overlay" aria-controls="main-nav-default-dark" onClick="return AU.mainNav.Toggle( this )"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- MAIN BODY -->
+	<main>
+		<!--CONTENT-->
+		<section class="au-body">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3">
+
+						<!-- Left hand navigation -->
+						<aside class="au-side-nav au-accordion" aria-label="side navigation">
+							<button
+								class="au-side-nav__toggle au-accordion__title au-accordion--closed"
+								aria-controls="nav-default"
+								aria-expanded="false"
+								aria-selected="false"
+								onclick="return AU.accordion.Toggle( this )"
+							>
+								In the content page section
+							</button>
+							<div id="nav-default" class="au-side-nav__content au-accordion--closed au-accordion__body">
+								<h2 class="au-sidenav__title">
+									<a href="#">Writing standards</a>
+								</h2>
+								<ul class="au-link-list">
+									<li><a href="#">Grammar</a></li>
+									<li><a href="#">Spelling and preferred terms</a></li>
+									<li><a href="#">Capitalisation</a></li>
+									<li><a href="#">Abbreviations</a></li>
+									<li><a href="../SM_L3_Landing_links/">Numbers</a>
+										<ul class="au-link-list">
+											<li class="active"><span>Number conventions</span></li>
+											<li><a href="#">Opening a sentence</a></li>
+											<li><a href="#">Measurements</a></li>
+											<li><a href="#">Large numbers</a></li>
+											<li><a href="#">Dates and time</a></li>
+											<li><a href="#">Roman numerals</a></li>
+											<li><a href="#">Currency</a></li>
+											<li><a href="#">Fractions</a></li>
+											<li><a href="#">Ordinal numbers</a></li>
+										</ul>
+									</li>	
+									<li><a href="#">Punctuation</a></li>
+									<li><a href="#">References and citations</a></li>
+									<li><a href="#">Formatting text</a></li>
+									<li><a href="#" style="border-bottom: 2px solid gray;">People and places</a></li>													
+									<li class="au-sidenav__title"><h2>
+										<a href="#">Visual design standards</a>
+									</h2></li>
+									<li class="au-sidenav__title"><h2>
+										<a href="#">Publishing requirements</a>
+									</h2></li>
+									<li class="au-sidenav__title"><h2>
+										<a href="#">Process guidance</a>
+									</h2></li>
+									<li class="au-sidenav__title"><h2>
+										<a href="#">Style guidance</a>
+									</h2></li>
+									<li class="au-sidenav__title"><h2>
+											<a href="#">About</a>
+										</h2></li>
+								</ul>
+							</div>
+						</aside>
+					</div>
+
+					<!-- Breadcrumbs -->
+					<div class="col-sm-8 col-md-offset-1" id="content">
+						<nav class="au-breadcrumbs" aria-label="breadcrumb">
+							<ul class="au-link-list au-link-list--inline">
+								<li><a href="../index_links.html">Home</a></li>                         <li><a href="../SM_L2_Landing_links_nonav_all/">Writing standards</a></li>
+								<li><a href="../SM_L3_Landing_links/">Numbers</a></li> 
+                                <li>Number conventions</li>
+							</ul>
+						</nav>
+
+						<!-- CT Abstract -->
+						<h1>Number conventions</h1>
+						<div class="abstract">
+							<p>
+                                When using numbers in a publication, there are various decisions to be made about their presentation, like whether to show them in words or numerals.
+                            </p>                            
+                        </div>
+
+						<!-- Table of contents -->
+						<nav class="au-inpage-nav-links" aria-label="in page navigation" id="toc">
+							<h2 class="au-inpage-nav-links__heading">Contents</h2>
+							
+							<ul class="au-link-list">
+								<li><a href="#section1">The rule</a></li>	
+								<li><a href="#section2">Opening a sentence</a></li>
+								<li><a href="#section3">Measurements</a></li>
+								<li><a href="#section4">Mathmatical relationships</a></li>
+								<li><a href="#section5">Large numbers</a></li>
+								<li><a href="#section6">More resources</a></li>
+							</ul>
+						</nav>					
+						
+						<!-- CT Rule -->
+						<h2 class="first-subheading" id="section1">The rule<a  href="#"><img class="link-icon" src="../assets/img/link-icon.svg"></a></h2>
+							
+						<p>
+                            Several different conventions could be invoked when deciding whether to present
+                            numbers in words or numerals. Most of these conventions specify a cut-off point
+                            (relating to the size of the number) after which numerals are used, but this point
+                            may be set at zero, nine, ten, twenty, one hundred or some other number.
+						</p>
+						<!-- CT Rationale -->						
+						<div class="rationale">
+							<h3>Why</h3>											
+							<div class="rationale-links">
+								<a href="#">Why it’s easier to read numbers on screen</a>
+								<p>Norman Nielson Group tells us the science behind why it’s easier to read numbers on screen.</p>					
+							</div>
+						</div>
+
+                        <!-- CT SubRule -->
+                        <a class="back-to-toc" href="#toc">Back to contents ^</a>
+						<h2 id="section2">Opening a sentence<a  href="#"><img class="link-icon" src="../assets/img/link-icon.svg"></a></h2>						
+						<p>When opening a sentence, a number should always be expressed in words.</p>
+						<!-- CT Example -->
+						<div class="example">
+							<p class="example-heading">Example</p>
+							<p class="example-text">Fifty-seven people attended the rally.</p>
+							<p class="example-text">Sixty per cent of hotel employees are casuals.</p>					
+                        </div>
+						<!-- SubRule -->
+						<div class="rule-text-border"></div>
+                        <p>If the number is lengthy when expressed in words, it may be better to rearrange
+the sentence.</p>                        
+                        <!-- CT Example Do/Don't -->						
+						<div class="example">
+                                <p class="example-heading">Example</p>
+                                <!-- Example type Do -->
+                                <div class="example-do">
+                                    <div class="do-icon">
+                                        <p class="example-heading-do-dont">Do</p>
+                                    </div>								
+                                    <p class="example-text">The board received 621 complaints.</p>				
+                                </div>
+                                <!-- Example type Don't -->
+                                <div class="example-dont">
+                                    <div class="dont-icon">
+                                        <p class="example-heading-do-dont">Don't</p>
+                                    </div>								
+                                    <p class="example-text">Six hundred and twenty-one complaints were received.</p>				
+                                </div>							
+							</div>
+							
+							<!-- SubRule -->
+							<div class="rule-text-border"></div>
+							<p>Similarly, recasting the sentence is often best if other numbers in the same passage
+								are expressed in numerals; this makes comparisons easier as well as maintaining
+								consistency.</p>                        
+							<!-- CT Example Do/Don't -->						
+							<div class="example">
+								<p class="example-heading">Example</p>
+								<!-- Example type Do -->
+								<div class="example-do">
+									<div class="do-icon">
+										<p class="example-heading-do-dont">Do</p>
+									</div>								
+									<p class="example-text">Of the 621 complaints received, 531 related to under-award pay and 90 related to working hours.</p>				
+								</div>
+								<!-- Example type Don't -->
+								<div class="example-dont">
+									<div class="dont-icon">
+										<p class="example-heading-do-dont">Don't</p>
+									</div>								
+									<p class="example-text">Six hundred and twenty-one complaints were received; of these 531 related to under-award pay
+										and 90 related to working hours.</p>				
+								</div>							
+							</div>
+
+							<!-- SubRule -->
+							<div class="rule-text-border"></div>
+							<p>Where a number that would open a sentence is accompanied by a symbol (for
+								example, a dollar sign) and therefore cannot be expressed in words, the sentence
+								should also be rearranged.</p>  			                 
+							<!-- CT Example Do/Don't -->						
+							<div class="example">
+								<p class="example-heading">Example</p>
+								<!-- Example type Do -->
+								<div class="example-do">
+									<div class="do-icon">
+										<p class="example-heading-do-dont">Do</p>
+									</div>								
+									<p class="example-text">In one suburb alone, a total of $12,684 was collected.</p>				
+								</div>
+								<!-- Example type Don't -->
+								<div class="example-dont">
+									<div class="dont-icon">
+										<p class="example-heading-do-dont">Don't</p>
+									</div>								
+									<p class="example-text">$12,684 was the total collected from one suburb alone.</p>				
+								</div>							
+							</div>
+							
+							<!-- Callout -->
+							<section class="au-callout">
+								<p>You can also find the rules on
+									the <a href="#">punctuation and spacing of
+										numbers</a>  (both in words and numerals) in the punctuation section of this manual.</p>
+							</section>
+
+							<!-- CT SubRule -->
+							<a class="back-to-toc" href="#toc">Back to contents ^</a>
+							<h2 id="section3">Measurements<a  href="#"><img class="link-icon" src="../assets/img/link-icon.svg"></a></h2>							
+							<p>Always use numerals for numbers that are accompanied by a symbol.</p>
+							<!-- CT Example -->
+						<div class="example">
+							<p class="example-heading">Example</p>
+							<p class="example-text">8°C</p>	
+							<p class="example-text">3km</p>			
+							<p class="example-text">45.9s</p>
+						</div>
+						
+						<!-- CT SubRule -->
+						<div class="rule-text-border"></div>
+						<p>Even when the measurement unit is written in full, numerals remain the most
+							common choice for the number.</p>
+							<!-- CT Example -->
+						<div class="example">
+							<p class="example-heading">Example</p>
+							<p class="example-text">8 degrees Celsius</p>	
+							<p class="example-text">3 kilometres</p>			
+							<p class="example-text">45.9 seconds</p>
+						</div>
+						
+						<!-- CT SubRule -->
+						<div class="rule-text-border"></div>
+						<p>However, in general discursive text where precise numbers or measurements play
+							little part, words may be appropriate for both the number and measurement.</p>
+							<!-- CT Example -->
+						<div class="example">
+							<p class="example-heading">Example</p>
+							<p class="example-text">He was twenty minutes late.</p>	
+							<p class="example-text">The child was ten or eleven years old.</p>						
+						</div>
+						
+						<!-- CT SubRule -->
+						<a class="back-to-toc" href="#toc">Back to contents ^</a>
+						<h2 id="section4">Mathmatical relationships<a  href="#"><img class="link-icon" src="../assets/img/link-icon.svg"></a></h2>					
+						<p>Numerals should always be used to express precise mathematical relationships,
+							such as in equations and ratios.</p>
+						<!-- CT Example -->
+					<div class="example">
+						<p class="example-heading">Example</p>
+						<p class="example-text">96 + 37 = 133 or 96 plus 37 equals 133</p>	
+						<p class="example-text">5:1</p>						
+					</div>
+
+					<!-- CT SubRule -->
+					<div class="rule-text-border"></div>
+					<p>In general text, words are an option only where the mathematical relationship is
+						not intended to be exact.</p>
+					<!-- CT Example -->
+					<div class="example">
+						<p class="example-heading">Example</p>
+						<p class="example-text">Many households—about one in six—are struggling to afford basic necessities.</p>							
+					</div>
+
+					<!-- CT SubRule -->
+					<a class="back-to-toc" href="#toc">Back to contents ^</a>
+					<h2 id="section5">Large numbers<a  href="#"><img class="link-icon" src="../assets/img/link-icon.svg"></a></h2>						
+					<h3>Aiding recognition</h3>
+					<p>Round numbers up to ten million are readily recognisable, whether words or
+						numerals are used.</p>
+					<!-- CT Example -->
+					<div class="example">
+						<p class="example-heading">Example</p>
+						<p class="example-text">two hundred five thousand nine million</p>	
+						<p class="example-text">200 5000 9,000,000</p>						
+					</div>
+					<!-- CT SubRule -->
+					<div class="rule-text-border"></div>
+					<p>Larger or more complex numbers expressed solely in either words or numerals can
+						be cumbersome or confusing, so it is often better to use a combination of words
+						and numerals.</p>
+					<!-- CT Example Do/Don't -->						
+					<div class="example">
+						<p class="example-heading">Example</p>
+						<!-- Example type Do -->
+						<div class="example-do">
+							<div class="do-icon">
+								<p class="example-heading-do-dont">Do</p>
+							</div>								
+							<p class="example-text">2.5 million</p>				
+						</div>
+						<!-- Example type Don't -->
+						<div class="example-dont">
+							<div class="dont-icon">
+								<p class="example-heading-do-dont">Don't</p>
+							</div>								
+							<p class="example-text">2,500,000</p>	
+							<p class="example-text">two million, five hundred thousand</p>	
+						</div>							
+					</div>
+					<!-- CT SubRule -->
+					<div class="rule-text-border"></div>
+					<p>An alternative method preferred in much scientific and technical documentation
+						is to use powers of ten.</p>
+					<!-- CT Example -->
+					<div class="example">
+						<p class="example-heading">Example</p>
+						<p class="example-text">2.5 x 10<sup>6</sup> [= 2 500 000]</p>		
+					</div>
+
+					<!-- CT SubRule -->
+					<h3>The terms ‘billion, ‘trillion’ and ‘quadrillion’</h3>
+					<p>The terms billion, trillion and quadrillion were originally used (as their prefixes
+						suggest) to signify a million multiplied by a factor of two, three and four
+						respectively.</p>
+					<!-- CT Example -->
+					<div class="example">
+						<p class="example-heading">Example</p>
+						<p class="example-text">billion = million x million (10<sup>12</sup>)</p>	
+						<p class="example-text">trillion = million x million x million (10<sup>18</sup>)</p>	
+						<p class="example-text">quadrillion = million x million x million x million (10<sup>24</sup>)</p>	
+					</div>		
+					
+					<!-- CT More resources -->
+					<a class="back-to-toc" href="#toc">Back to contents ^</a>
+					<h2 id="section6">More resources<a  href="#"><img class="link-icon" src="../assets/img/link-icon.svg"></a></h2>					
+					<div class="more-resources-links">
+						<a href="#">PDF Techniques for WCAG 2.0</a>
+						<p>Guidance on how to improve PDF accessibitliy from W3C.</p>
+						<a href="#">Accessibility for Adobe Acrobat</a>
+						<p>Guidance on how to improve PDF accessibitliy from Adobe.</p>
+					</div>
+
+					<!-- CT Source attribution -->
+					<div class="source-attribution">
+						<div>
+							<p>Co-created by</p>
+							<p>Last updated</p>							
+						</div>
+						<div>
+							<p>Department of the Prime Minister and Cabinet</p>
+							<p>May 2018</p>
+						</div>
+					</div>
+					<!-- Main content body end -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--END CONTENT-->
+	</main>
+	<!-- END MAIN BODY -->
+
+	<!--FOOTER -->
+	<footer class="au-footer au-footer--dark au-body au-body--dark" role="contentinfo">
+		<div class="container-fluid">
+			<div class="row">
+				<nav class="col-md-12" aria-label="footer">
+					<ul class="au-link-list au-link-list--inline">
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Need Help?</a></li>
+						<li><a href="#">Accessibility</a></li>
+					</ul>
+				</nav>
+				<section class="col-sm-12">
+					<div class="au-footer__end">
+						<p>
+							© Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where otherwise noted, this work is licensed under the <a href="https://github.com/govau/design-system-starter/blob/master/LICENSE" rel="external">MIT license</a>
+						</p>
+					</div>
+				</section>
+			</div>
+	</footer>
+
+	<!-- The javascript from pancake to open and close side nav on desktop -->
+	<script type="text/javascript" src="../js/script.min.js"></script>
+</body>
+
+</html>
