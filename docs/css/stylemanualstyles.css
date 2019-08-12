@@ -15,6 +15,10 @@
     margin-top: 3rem;
 } */
 
+a {
+    cursor: -webkit-pointer; cursor: pointer;
+}
+
 .link-icon {
     margin-left: 1rem;
 }
