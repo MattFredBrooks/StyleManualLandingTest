@@ -22,10 +22,9 @@
 		var $html = document.documentElement; if ($html.classList) $html.classList.remove("no-js"), $html.classList.add("js"); else { var className = "no-js"; $html.className = $html.className.replace(new RegExp("(^|\\b)" + className.split(" ").join("|") + "(\\b|$)", "gi"), " "), $html.className += " js" }
 	</script>
 
-	<link rel="icon" href="assets/favicons/favicon.ico">
-	<link type="text/css" rel="stylesheet" href="css/main.css">
-	<link type="text/css" rel="stylesheet" href="css/stylemanualstyles.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="../assets/favicons/favicon.ico">
+	<link type="text/css" rel="stylesheet" href="../css/main.css">
+	<link type="text/css" rel="stylesheet" href="../css/stylemanualstyles.css">
 
 	<!-- These are shivs to help modern html work in older internet explorer browsers -->
 	<!--[if lt IE 9]>
@@ -54,10 +53,10 @@
 	<!-- HEADER -->
 	<header class="au-header au-header--dark" role="banner">
 		<div class="container-fluid">
-			<div class="row">
+			<div class="row">				
 				<div class="col-md-12">
 
-					<!-- Search -->
+				<!-- Search -->
 				<div style="position: absolute;
 				right: 0;">						
 					<input type="email" class="au-text-input" id="email" name="email">
@@ -66,9 +65,9 @@
 					<button class="au-btn au-btn--dark" style="position: absolute; right: 0; border-radius: 0px 4px 4px 0px; border: 2px solid gray; padding-bottom: 10px;
 					">Search</button>
 				</div>
-
+				
 					<a class="au-header__brand" href="index.html">
-						<img class="au-header__brand-image" alt="Insert alternate text here" src="assets/img/header-logo-agov.png">
+						<img class="au-header__brand-image" alt="Insert alternate text here" src="../assets/img/header-logo-agov.png">
 						<div class="au-header__text">
 						<h1 class="au-header__heading">Style Manual</h1>
 						<!-- <div class="au-header__subline">Simple explanation of the website</div> -->
@@ -100,38 +99,13 @@
 									onClick="return AU.mainNav.Toggle( this )">
 									Close
 								</button>
-								<ul class="au-link-list">								
-									<!-- Dropdown menu -->
-									<!-- <li class="dropdown" onmouseover="myFunction1()" onmouseout="myFunction1o()">
-										<a class="dropbtn">Content types
-											<i class="fa fa-caret-down"></i>
-										</a>
-										<div class="dropdown-content" id="myDropdown1">
-												<a href="SM_content_types_page/index.html">Content types</a>
-												<a href="SM_rule_page/index.html">Rule page</a>
-												<a href="SM_guide_page/index.html">Guidance page</a>
-										</div>
-									</li> -->
-									<!-- Dropdown menu end -->
-									<!-- Dropdown menu -->
-									<li class="dropdown" onmouseover="myFunction2()" onmouseout="myFunction2o()">
-											<a class="dropbtn">Cards
-												<i class="fa fa-caret-down"></i>
-											</a>
-											<div class="dropdown-content" id="myDropdown2">
-													<a href="cards/index.html">Cards home</a>
-											</div>
-										</li><!-- Dropdown menu end -->
-										<!-- Dropdown menu -->
-									<li class="dropdown" onmouseover="myFunction3()" onmouseout="myFunction3o()">
-											<a class="dropbtn">Lists
-												<i class="fa fa-caret-down"></i>
-											</a>
-											<div class="dropdown-content" id="myDropdown3">
-													<a href="lists/index.html">Lists home</a>
-											</div>
-										</li><!-- Dropdown menu end -->
-
+								<ul class="au-link-list">									
+									<li><a href="l2_writingstandards.html">Writing standards</a></li>
+									<li class="active"><a href="l2_visualdesignstandards.html">Visual design standards</a></li>
+									<li><a>Publishing requirements</a></li>
+									<li><a>Process guidance</a></li>		
+									<li><a>Style guidance</a></li>
+									<li><a>About</a></li>
 								</ul>
 								<div class="au-main-nav__focus-trap-bottom"></div>
 							</div>
@@ -145,93 +119,95 @@
 
 	<!-- MAIN BODY -->
 	<main id="content">
-		<!--CONTENT-->
-		<div class="au-body au-body--alt banner">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-sm-push-6">
-						<img class="au-responsive-media-img banner__image" src="assets/img/StyleManualBooks.png" alt="Placeholder image 600x260">
-					</div>
-					<div class="col-xs-12 col-sm-6 col-sm-pull-6">
-						<h2>Hero callout</h2>
-						<p>Support the callout with some short explanatory text. You don't need more than a couple of sentences.</p>
-						<p>Use buttons to give your user a clear call to action about what to do next.</p>
-						<div class="btn-cta-group">
-							<a class="au-btn" >Primary call to action</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<!--CONTENT-->	
 		<section class="au-body">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12">
-						<h2>Some highlighted content</h2>
-						<p>Explain some important information upfront, what is the product or service. What is the role of it. How does the user get started using it. Keep this text simple and informative. Vestibulum non consequat tellus.</p>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-3">
 
-						<p>Nullam sollicitudin orci neque, ut condimentum ipsum blandit eu. Praesent eu sagittis elit.</p>
+								<!-- Left hand navigation -->
+								<aside class="au-side-nav au-accordion" aria-label="side navigation">
+									<button
+										class="au-side-nav__toggle au-accordion__title au-accordion--closed"
+										aria-controls="nav-default"
+										aria-expanded="false"
+										aria-selected="false"
+										onclick="return AU.accordion.Toggle( this )"
+									>
+										In the content page section
+									</button>
+									<div id="nav-default" class="au-side-nav__content au-accordion--closed au-accordion__body">
+										<ul class="au-link-list">
+											<li class="au-sidenav__title"><h2>
+												<a href="l2_writingstandards.html">Writing standards</a>
+											</h2></li>											
+											<li class="au-sidenav__title"><h2>
+												<a href="l2_visualdesignstandards.html">Visual design standards</a>
+											</h2></li>
+											<li class="active"><span>Australian Government branding</span>
+												<ul class="au-link-list">
+													<li><a href="rule_logoposition.html">Logo position</a></li>
+													<li><a>Logo colour</a></li>
+													<li><a>Multiple logos</a></li>
+													<li><a>Program branding</a></li>
+												</ul>
+											</li>	
+											<li><a>Print design standards</a></li>
+											<li><a style="border-bottom: 2px solid gray;">Web design standards</a></li>
+											<li class="au-sidenav__title"><h2>
+												<a>Publishing requirements</a>
+											</h2></li>
+											<li class="au-sidenav__title"><h2>
+												<a>Process guidance</a>
+											</h2></li>
+											<li class="au-sidenav__title"><h2>
+												<a>Style guidance</a>
+											</h2></li>
+											<li class="au-sidenav__title"><h2>
+													<a>About</a>
+												</h2>
+											</li>
+										</ul>
+									</div>
+								</aside>
+							</div>
 
-						<p>Nullam ut nibh sed nunc molestie faucibus. Integer pulvinar sapien in porta fringilla. Cras et velit fermentum, pretium lacus gravida, egestas mauris. Explain some important information upfront, what is the product or service. What is the role of it. How does the user get started using it. Keep this text simple and informative.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="au-body au-body--alt banner">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12">
-						<h2>Sub content</h2>
-						<p>Content that is important to have on the home page but not so important that it has to be visible at the top of the page. This could include contact information, more detailed explanation of the functionality of a product or service.</p>
-						<div class="btn-cta-group">
-							<a class="au-btn" >Primary call to action</a>
-							<a class="au-btn au-btn--secondary" >Secondary call to action</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="au-body">
-			<div class="container-fluid">
-				<div class="row">
-						<h2>Articles</h2>
-					<div class="col-md-12">
-						<div class="row">
-							<ul class="au-card-list au-card-list--matchheight ">
-								<li class="col-xs-12 col-sm-4">
-									<div class="au-card au-card--shadow au-card--centred au-card--clickable">
-										<img class="au-responsive-media-img" alt="placeholder image"
-												src="assets/img/600x260.jpg">
-										<div class="au-card__inner ">
-											<h2 class="au-card__title au-display-lg" type="heading"><a
-													class="au-card--clickable__link ">Card title</a></h2>
-											<p type="content" class="au-card__content">Additional text relating to the card.</p>
-										</div>
-									</div>
-								</li>
-								<li class="col-xs-12 col-sm-4">
-									<div class="au-card  au-card--shadow au-card--centred au-card--clickable">
-										<img class="au-responsive-media-img"
-											alt="placeholder image" src="assets/img/600x260.jpg">
-										<div class="au-card__inner ">
-											<h2 class="au-card__title au-display-lg" type="heading"><a
-													class="au-card--clickable__link ">Card title</a></h2>
-											<p type="content" class="au-card__content">Additional text relating to the card.</p>
-										</div>
-									</div>
-								</li>
-								<li class="col-xs-12 col-sm-4">
-									<div class="au-card  au-card--shadow au-card--centred au-card--clickable">
-										<img class="au-responsive-media-img" alt="placeholder image"
-											src="assets/img/600x260.jpg">
-										<div class="au-card__inner ">
-										<h2 class="au-card__title au-display-lg" type="heading"><a
-													class="au-card--clickable__link ">Card title</a></h2>
-										<p type="content" class="au-card__content">Additional text relating to the card.</p>
-									</div>
-								</div>
-							</li>
-						</ul>
+					<div class="col-sm-8 col-md-offset-1" id="content">
+						<!-- Breadcrumbs -->
+						<div id="content">
+							<nav class="au-breadcrumbs" aria-label="breadcrumb">
+								<ul class="au-link-list au-link-list--inline">
+									<li><a href="index.html">Home</a></li>                   
+									<li><a href="l2_visualdesignstandards.html">Visual design standards</a></li>
+									<li>Australian Government branding</li>
+								</ul>
+							</nav>
+						</div>					
+		
+						<!-- CT Abstract -->
+						<h1>Australian Government branding</h1>
+						<!-- <div class="abstract">
+							<p>When using numbers in a publication, there are various decisions to be made about their presentation, like whether to show them in words or numerals.</p>
+						</div>			 -->
+
+						<!-- Landing links -->
+						<div class="container-fluid landing-cards-side-nav">
+							<div class="row landing-links-all" style="margin-top: 0;">					
+								<ul class="" style="list-style: none;">		
+									<li class="col-xs-12 col-sm-4">										
+										<div class="landing-links-all">
+											<ul style="list-style: none;">
+												<li><h2 class="zebra-heading">In this section</h2></li>
+												<li><a href="rule_logoposition.html">Logo position</a></li>
+												<li><a>Logo colour</a></li>
+												<li><a>Multiple logos</a></li>
+												<li><a>Program branding</a></li>
+											</ul>											
+										</div>										
+									</li>												
+								</ul>
+							</div>							
+						</div> <!--Container end-->
 					</div>
 				</div>
 			</div>
@@ -254,35 +230,13 @@
 				<section class="col-sm-12">
 					<div class="au-footer__end">
 						<p>
-							© Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where otherwise noted, this work is licensed under the <a href="https://github.com/govau/design-system-starter/blob/master/LICENSE" rel="external">MIT license</a>
+							© Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where otherwise noted, this work is licensed under the <a href="../index.html" rel="external">MIT license</a>
 						</p>
 					</div>
 				</section>
 			</div>
 	</footer>
-	<script>
-			/* When the user clicks on the button, 
-			toggle between hiding and showing the dropdown content */
-			function myFunction1() {
-			  document.getElementById("myDropdown1").classList.toggle("show");
-			}
-			function myFunction2() {
-			  document.getElementById("myDropdown2").classList.toggle("show");
-			}
-			function myFunction3() {
-			  document.getElementById("myDropdown3").classList.toggle("show");
-			}
-			// Hide the dropdowns if open and mouse moves off of them.
-			function myFunction1o() {
-			  document.getElementById("myDropdown1").classList.toggle("show");
-			}
-			function myFunction2o() {
-			  document.getElementById("myDropdown2").classList.toggle("show");
-			}
-			function myFunction3o() {
-			  document.getElementById("myDropdown3").classList.toggle("show");
-			}
-			</script>
+
 	<!-- The javascript from pancake to open and close side nav on desktop -->
 	<script type="text/javascript" src="js/script.min.js"></script>
 </body>
